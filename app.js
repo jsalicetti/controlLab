@@ -31,3 +31,26 @@ function plantGrowth(weeks) {
   // Calculate the number of plants after a few weeks (3)
   console.log();
   const plantCount = plant * Math.pow(2, weeks);
+  // Check if the plant count exceeds 80% of the garden's capacity
+if (plantCount > capacity * 0.8) {
+
+    console.log(`Week ${weeks}: Prune the plants. Get em!`);
+    // Check if the plant count is between 50% and 80% of the garden's capacity
+  } else if (
+    plantCount >= capacity * 0.5 &&
+    plantCount <= capacity * 0.8
+  ) {
+    console.log(
+        `Week ${weeks}: Watch the plants. They're doing alright!'.`
+      );
+    } else {
+      console.log(`Week ${weeks}: Plant more. Go green thumb!.`);
+    }
+    }
+
+    // growth week 1
+    plantGrowth(1);
+    // growth week 2
+    plantGrowth(2);
+    // growth week 3
+    plantGrowth(3);
